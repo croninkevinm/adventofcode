@@ -10,6 +10,7 @@ internal class Runner
         {
             if (previousYear != solver.Year())
             {
+                WriteLine();
                 WriteLine($"Advent Of Code y={solver.Year()}", ConsoleColor.Green);
                 previousYear = solver.Year();
             }
@@ -42,7 +43,16 @@ internal class Runner
 
     private static string GetNormalizedInput(string inputFilePath)
     {
-        string input = File.ReadAllText(inputFilePath);
+        string input;
+        try
+        {
+            input = File.ReadAllText(inputFilePath);
+        }
+        catch (Exception)
+        {
+
+            input = "";
+        }
         return InputUtils.NormalizeInput(input);
     }
 

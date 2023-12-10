@@ -7,11 +7,11 @@ public class Y2023Day01 : ISolver
 {
     public object PartOne(string input)
     {
-        return 1234;
+        return new { };
     }
 
     public object PartTwo(string input)
     {
-        return 5678;
+        return new { };
     }
 }

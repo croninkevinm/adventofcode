@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="input\2019\Day02.in" />
     <None Remove="input\2023\Day02.in" />
     <None Remove="Input\2023\Day03.in" />
   </ItemGroup>

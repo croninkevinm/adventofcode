@@ -14,7 +14,7 @@ public class Test2023Day01
     }
 
     [Theory]
-    [InlineData(142, "two1nine\neightwothree\nabcone2threexyz\nxtwone3four\n4nineeightseven2\nzoneight234\n7pqrstsixteen")]
+    [InlineData(281, "two1nine\neightwothree\nabcone2threexyz\nxtwone3four\n4nineeightseven2\nzoneight234\n7pqrstsixteen")]
     public void Part2(object expected, string input)
     {
         var actual = _solution.PartTwo(InputUtils.NormalizeInput(input));
